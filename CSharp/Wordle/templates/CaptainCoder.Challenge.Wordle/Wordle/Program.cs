@@ -34,7 +34,7 @@ void Play()
         Console.Write($"Guesses remaining: {guesses} | Guess: ");
         string guess = Console.ReadLine()!.ToUpper();
 
-        if (!words.Contains(guess))
+        if (guess.Length != 5)
         {
             Console.WriteLine("Invalid word.");
             continue;
