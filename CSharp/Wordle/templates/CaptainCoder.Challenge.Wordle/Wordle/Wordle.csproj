@@ -2,6 +2,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+    <Reference Include="Solution">
+      <HintPath>lib\Solution.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <PropertyGroup>

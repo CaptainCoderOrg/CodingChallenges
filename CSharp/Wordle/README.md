@@ -1,3 +1,4 @@
-## Credits
+# Captain Coder's Wordle Challenges
 
-words_alpha.txt - https://github.com/dwyl/english-words
+This project contains templates that are challenges to be completed as part of
+Captain Coder's Adventures in C#!

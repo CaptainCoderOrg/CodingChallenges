@@ -1,15 +1,23 @@
 ﻿// Set DEBUG to true to see the randomly selected word while playing
 bool DEBUG = false;
-string[] words = File.ReadAllLines("words.txt");
-GuessChecker checker = new GuessChecker();
-ResultWriter writer = new ResultWriter();
+
+IGuessChecker checker = new GuessChecker();
+IGuessWriter writer = new GuessWriter();
+
+// TODO: 1st: Complete GuessWriter.cs
+writer = new GuessWriterSolution(); // TODO: Comment this line to use your solution
+
+// TODO: 2nd: Complete GuessChecker.cs 
+checker = new GuessCheckerSolution(); // TODO: Comment this line to use your solution
+
+string[] words = LoadWords();
 
 do
 {
-    Play(checker, writer);
+    Play();
 } while (PlayAgain());
 
-void Play(IGuessChecker checker, IResultWriter writer)
+void Play()
 {
     Console.Clear();
     Console.WriteLine("Can you guess the 5 letter word?");
@@ -23,18 +31,16 @@ void Play(IGuessChecker checker, IResultWriter writer)
 
     do
     {
-        Console.WriteLine($"Guesses remaining: {guesses}");
-        Console.Write("Guess: ");
+        Console.Write($"Guesses remaining: {guesses} | Guess: ");
         string guess = Console.ReadLine()!.ToUpper();
 
-        if (guess.Length != word.Length)
+        if (!words.Contains(guess))
         {
             Console.WriteLine("Invalid word.");
             continue;
         }
 
-        SymbolResult[] results = checker.CheckGuess(word, guess);
-        writer.Write(results);
+        writer.Write(word, guess, checker);
 
         isWon = guess == word;
         guesses--;
@@ -63,3 +69,5 @@ bool PlayAgain()
     Console.WriteLine("Invalid choice.");
     return PlayAgain();
 }
+
+string[] LoadWords() => File.ReadAllLines("words.txt").Select(word => word.Trim().ToUpper()).ToArray();
