@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{CBBA0C6A-7628-40EC-8CE3-34731236BDF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{92CC783C-D994-463F-829C-42B62DE85347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordle", "Wordle\Wordle.csproj", "{9E1A327A-8413-4B46-ACB3-E0FE7AF9C6AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBBA0C6A-7628-40EC-8CE3-34731236BDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBA0C6A-7628-40EC-8CE3-34731236BDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBA0C6A-7628-40EC-8CE3-34731236BDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBA0C6A-7628-40EC-8CE3-34731236BDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CC783C-D994-463F-829C-42B62DE85347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CC783C-D994-463F-829C-42B62DE85347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CC783C-D994-463F-829C-42B62DE85347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CC783C-D994-463F-829C-42B62DE85347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1A327A-8413-4B46-ACB3-E0FE7AF9C6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1A327A-8413-4B46-ACB3-E0FE7AF9C6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1A327A-8413-4B46-ACB3-E0FE7AF9C6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1A327A-8413-4B46-ACB3-E0FE7AF9C6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
