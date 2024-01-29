@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Captain Coder",
+    "classifications": [ "Captain Coder Challenges"],
+    "identity": "CaptainCoder.Challenges.NameGenerator",
+    "name": "Name Generator Challenge",
+    "shortName": "captaincoder-namegenerator"
+}
