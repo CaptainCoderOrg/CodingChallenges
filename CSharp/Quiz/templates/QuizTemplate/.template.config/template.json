@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Captain Coder",
+    "classifications": [ "Captain Coder Challenges"],
+    "identity": "CaptainCoder.Challenges.Quiz",
+    "name": "Quiz Challenge",
+    "shortName": "captaincoder-quiz"
+}
