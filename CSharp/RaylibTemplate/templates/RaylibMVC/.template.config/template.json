@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Captain Coder",
+    "classifications": [ "Captain Coder Templates"],
+    "identity": "CaptainCoder.Templates.Raylib.MVC",
+    "name": "Raylib MVC Template",
+    "shortName": "captaincoder-raylib"
+}
