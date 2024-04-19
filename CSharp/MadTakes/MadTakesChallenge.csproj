@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.0.1</PackageVersion>
+    <PackageId>CaptainCoder.Challenges.Templates.MadTakes</PackageId>
+    <Title>Captain Coder's Mad Takes Challenge</Title>
+    <Authors>Captain Coder</Authors>
+    <Description>Template to use for Captain Coder's Mad Takes Challenge</Description>
+    <PackageTags>dotnet-new;templates;console</PackageTags>
+    <TargetFramework>.net8.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*;templates\MadTakes\.editorconfig" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
