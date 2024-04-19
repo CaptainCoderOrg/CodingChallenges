@@ -1,6 +1,4 @@
 ﻿// Clears the terminal
-using System.Diagnostics.CodeAnalysis;
-
 Console.Clear();
 
 // Console.WriteLine displays text to the console

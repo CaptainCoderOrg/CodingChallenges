@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>0.0.2</PackageVersion>
     <PackageId>CaptainCoder.Challenges.Templates.MadTakes</PackageId>
     <Title>Captain Coder's Mad Takes Challenge</Title>
     <Authors>Captain Coder</Authors>
