@@ -3,7 +3,7 @@
 
 TicTacToe game = new ();
 
-// While the game has not been one and the game is not a draw
+// While the game has not been won and the game is not a draw
 while(!game.CheckWin() && !game.CheckDraw())
 {
     Console.Clear();
